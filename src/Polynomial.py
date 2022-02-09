@@ -1,4 +1,4 @@
-from types.Monomial import Monomial
+from Monomial import Monomial
 
 
 class Polynomial:
