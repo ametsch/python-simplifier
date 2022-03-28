@@ -1,3 +1,5 @@
 token
 src/python_simplifier_ametsch.egg-info
 /dist/*
+pyproject.toml
+setup.cfg
