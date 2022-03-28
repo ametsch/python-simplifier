@@ -1,4 +1,5 @@
 import hashlib as hl
+
 class Hasher:
     def __init__(self):
         pass
@@ -68,3 +69,9 @@ class Hasher:
             return self.hash_md5(e)
         else:
             return self.hash_x_md5(e, i-1)
+
+    def hash_x_sha3_512(self, e, i: int):
+        if i <= 1:
+            return self.hash_sha3_512(e)
+        else:
+            return self.hash_x_sha3_512(e, i-1)
