@@ -2,10 +2,12 @@ from Monomial import Monomial
 
 
 class Polynomial:
+    m = Monomial()
     def __init__(self, *args):
         temp = []
         for i in args:
-            temp.append(i)
+            if type(i) == type(self.m):
+                temp.append(i)
         self.list = temp
     def __init__(self):
         self.list = []
