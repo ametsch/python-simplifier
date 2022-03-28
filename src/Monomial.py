@@ -3,8 +3,8 @@ class Monomial:
         self.coeff = coeff
         self.exp = exp
     def __init__(self):
-        self.coeff = 0
-        self.exp = 0
+        self.coeff = 0.0
+        self.exp = 0.0
     
     def __str__(self):
         return f"{self.coeff}X^{self.exp}"

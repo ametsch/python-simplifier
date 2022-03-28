@@ -2,14 +2,30 @@ class ImaginaryNumber:
     def __init__(self):
         self.a = 0
         self.b = 0
-    def __init__(self, a, b):
+    def __init__(self, a: float, b: float):
+        self.a = a
+        self.b = b
+    def __init__(self, a: int, b: int):
+        self.a = a
+        self.b = b
+    def __init__(self, a: float, b: int):
+        self.a = a
+        self.b = b
+    def __init__(self, a: int, b: float):
         self.a = a
         self.b = b
     
-    def setA(self, a):
+
+
+    def setA(self, a: int):
         self.a = a
-    def setB(self, b):
+    def setB(self, b: int):
         self.b = b
+    def setA(self, a: float):
+        self.a = a
+    def setB(self, b: float):
+        self.b = b
+        
     def getA(self):
         return self.a
     def getB(self):

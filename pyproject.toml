@@ -2,6 +2,8 @@
 requires = [
     "setuptools>=42",
     "wheel",
-    "hashlib"
+    "hashlib",
+    "base65536",
+    "pyconverter"
 ]
 build-backend = "setuptools.build_meta"
