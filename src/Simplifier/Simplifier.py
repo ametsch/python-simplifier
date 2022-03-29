@@ -15,3 +15,19 @@ class Simplifier:
     def printf(self, val: str, *args):
         print(str.format(val, args))
     
+    def nthrt(self, val: float | int, n: float | int):
+        return val**(1.0/n)
+    def curt(self, val: float | int):
+        return val**(1.0/3.0)
+    
+    def isEven(self, val: int):
+        if val % 2 == 0:
+            return True
+        else:
+            return False
+    def isOdd(self, val: int):
+        if val % 2 == 1:
+            return True
+        else:
+            return False
+
