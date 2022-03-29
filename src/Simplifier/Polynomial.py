@@ -1,4 +1,4 @@
-from Monomial import Monomial
+from Simplifier.Monomial import Monomial
 
 
 class Polynomial:
@@ -35,4 +35,8 @@ class Polynomial:
             temp.add(i.dy_dx())
         return temp
 
-
+    def eval(self, val: float | int):
+        temp = 0.0
+        for i in self.list:
+            temp += i.eval(val)
+        return temp

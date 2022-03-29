@@ -1,5 +1,3 @@
-# Example Package
+# Python Simplifier
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+A module to assist in simplifying your python experience

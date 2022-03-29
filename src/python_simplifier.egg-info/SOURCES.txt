@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Simplifier/FileHelper.py
+src/Simplifier/Hasher.py
+src/Simplifier/ImaginaryNumber.py
+src/Simplifier/Monomial.py
+src/Simplifier/NumberSystems.py
+src/Simplifier/Polynomial.py
+src/Simplifier/Simplifier.py
+src/Simplifier/__init__.py
+src/python_simplifier.egg-info/PKG-INFO
+src/python_simplifier.egg-info/SOURCES.txt
+src/python_simplifier.egg-info/dependency_links.txt
+src/python_simplifier.egg-info/top_level.txt
