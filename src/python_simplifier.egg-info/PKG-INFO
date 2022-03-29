@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: python-simplifier
-Version: 0.0.2
+Version: 0.1.0
 Summary: A module to assist in simplifying your python experience
 Home-page: https://github.com/ametsch/python-simplifier
 Author: Aaron Metsch
@@ -22,4 +22,9 @@ A module to assist in simplifying your python experience
 ## How to install:
 * Windows: `pip install python-simplifier`
 * Mac/Linux: `pip3 install python-simplifier`
+
+
+### Links:
+* [Github](https://github.com/ametsch/python-simplifier)
+* [PyPI](https://pypi.org/project/python-simplifier/)
 
