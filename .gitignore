@@ -2,3 +2,6 @@
 pyproject.toml
 setup.cfg
 token
+build.py
+/__pycache__
+/src/python_simplifier.egg-info
