@@ -1,16 +1,18 @@
+from numpy import float64, int64
+
 class ImaginaryNumber:
     def __init__(self):
         self.a = 0
         self.b = 0
-    def __init__(self, a: float | int, b: float | int):
+    def __init__(self, a: float64 | int64, b: float64 | int64):
         self.a = a
         self.b = b
     
 
 
-    def setA(self, a: int | float):
+    def setA(self, a: int64 | float64):
         self.a = a
-    def setB(self, b: int | float):
+    def setB(self, b: int64 | float64):
         self.b = b
         
     def getA(self):

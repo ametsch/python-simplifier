@@ -1,5 +1,7 @@
+from numpy import float64, int64
+
 class Monomial:
-    def __init__(self, coeff: float | int, exp: float | int):
+    def __init__(self, coeff: float64 | int64, exp: int64):
         self.coeff = coeff
         self.exp = exp
     def __init__(self):
@@ -13,12 +15,12 @@ class Monomial:
         return self.coeff
     def getExp(self):
         return self.exp
-    def setCoeff(self, coeff: float | int):
+    def setCoeff(self, coeff: float64 | int64):
         self.coeff = coeff
-    def setExp(self, exp: float | int):
+    def setExp(self, exp: int64):
         self.exp = exp
 
-    def eval(self, val: float | int):
+    def eval(self, val: float64 | int64):
         return self.coeff * pow(val, self.exp)
 
     def dy_dx(self):

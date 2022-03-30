@@ -1,5 +1,5 @@
+from numpy import float64, int64
 from Simplifier.Monomial import Monomial
-
 
 class Polynomial:
     m = Monomial()
@@ -35,7 +35,7 @@ class Polynomial:
             temp.add(i.dy_dx())
         return temp
 
-    def eval(self, val: float | int):
+    def eval(self, val: float64 | int64):
         temp = 0.0
         for i in self.list:
             temp += i.eval(val)

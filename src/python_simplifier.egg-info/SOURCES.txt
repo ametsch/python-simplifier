@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.cfg
 src/Simplifier/FileHelper.py
+src/Simplifier/Fraction.py
 src/Simplifier/Hasher.py
 src/Simplifier/ImaginaryNumber.py
 src/Simplifier/Monomial.py

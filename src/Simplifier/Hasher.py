@@ -1,4 +1,5 @@
 import hashlib as hl
+from numpy import int64
 
 class Hasher:
     def __init__(self):
@@ -46,31 +47,31 @@ class Hasher:
     def hash_blake2s(self, e):
         return hl.blake2s(str(e).encode()).hexdigest()
 
-    def hash_x_blake2b(self, e, i: int):
+    def hash_x_blake2b(self, e, i: int64):
         if i <= 1:
             return self.hash_blake2b(e)
         else:
             return self.hash_x_blake2b(e, i-1)
     
-    def hash_x_blake2s(self, e, i: int):
+    def hash_x_blake2s(self, e, i: int64):
         if i <= 1:
             return self.hash_blake2s(e)
         else:
             return self.hash_x_blake2s(e, i-1)
 
-    def hash_x_sha512(self, e, i: int):
+    def hash_x_sha512(self, e, i: int64):
         if i <= 1:
             return self.hash_sha512(e)
         else:
             return self.hash_x_sha512(e, i-1)
 
-    def hash_x_md5(self, e, i: int):
+    def hash_x_md5(self, e, i: int64):
         if i <= 1:
             return self.hash_md5(e)
         else:
             return self.hash_x_md5(e, i-1)
 
-    def hash_x_sha3_512(self, e, i: int):
+    def hash_x_sha3_512(self, e, i: int64):
         if i <= 1:
             return self.hash_sha3_512(e)
         else:
