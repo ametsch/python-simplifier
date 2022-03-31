@@ -25,10 +25,13 @@ class NumberSystems:
     def decToBin(self, val: float64 | int64):
         return pc.doubletobin(val)
     def binToDec(self, val: str):
-        return pc.doubletobin(val)
+        return pc.bintodouble(val)
 
     def hexToOct(self, val: str):
         return pc.hextooct(val)
 
     def decToOct(self, val: float64 | int64):
         return pc.doubletooct(val)
+
+    def binToOct(self, val: str):
+        return pc.bintooct(val)

@@ -13,3 +13,12 @@ class FileHelper:
         with open(path, "r") as f:
             temp = f.read().split(sep)
         return temp
+    
+    def readcsv(self, path: str):
+        list = []
+        with open(path, 'r') as f:
+            list = f.readlines()
+        out = []
+        for i in list:
+            out.append(i.split(','))
+        return out

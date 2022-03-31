@@ -3,7 +3,7 @@ from Simplifier.Monomial import Monomial
 
 class Polynomial:
     m = Monomial()
-    def __init__(self, *args):
+    def __init__(self, *args: Monomial):
         temp = []
         for i in args:
             if type(i) == type(self.m):

@@ -9,7 +9,7 @@ class Monomial:
         self.exp = 0.0
     
     def __str__(self):
-        return f"{self.coeff}X^{self.exp}"
+        return f"({self.coeff})X^({self.exp})"
     
     def getCoeff(self):
         return self.coeff

@@ -76,3 +76,45 @@ class Hasher:
             return self.hash_sha3_512(e)
         else:
             return self.hash_x_sha3_512(e, i-1)
+
+    def hash_x_sha1(self, e, i: int64):
+        if i <= 1:
+            return self.hash_sha1(e)
+        else:
+            return self.hash_x_sha1(e, i-1)
+
+    def hash_x_sha384(self, e, i: int64):
+        if i <= 1:
+            return self.hash_sha384(e)
+        else:
+            return self.hash_x_sha384(e, i-1)
+
+    def hash_x_sha224(self, e, i: int64):
+        if i <= 1:
+            return self.hash_sha224(e)
+        else:
+            return self.hash_x_sha224(e, i-1)
+
+    def hash_x_shake256(self, e, i: int64):
+        if i <= 1:
+            return self.hash_shake256(e)
+        else:
+            return self.hash_x_shake256(e, i-1)
+
+    def hash_x_shake128(self, e, i: int64):
+        if i <= 1:
+            return self.hash_shake128(e)
+        else:
+            return self.hash_x_shake128(e, i-1)
+
+    def hash_x_sha3_384(self, e, i: int64):
+        if i <= 1:
+            return self.hash_sha3_384(e)
+        else:
+            return self.hash_x_sha3_384(e, i-1)
+
+    def hash_x_sha3_224(self, e, i: int64):
+        if i <= 1:
+            return self.hash_sha3_224(e)
+        else:
+            return self.hash_x_sha3_224(e, i-1)
