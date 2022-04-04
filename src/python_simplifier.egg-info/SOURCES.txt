@@ -14,4 +14,5 @@ src/Simplifier/__init__.py
 src/python_simplifier.egg-info/PKG-INFO
 src/python_simplifier.egg-info/SOURCES.txt
 src/python_simplifier.egg-info/dependency_links.txt
+src/python_simplifier.egg-info/requires.txt
 src/python_simplifier.egg-info/top_level.txt
