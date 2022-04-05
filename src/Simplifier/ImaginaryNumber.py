@@ -18,10 +18,10 @@ class ImaginaryNumber:
     def setB(self, b: int64 | float64) -> None:
         self.b = b
         
-    def getA(self) -> float64 | int64:
+    def getA(self) -> float64:
         return self.a
 
-    def getB(self) -> float64 | int64:
+    def getB(self) -> float64:
         return self.b
 
     def __str__(self) -> str:

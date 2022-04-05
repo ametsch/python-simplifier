@@ -44,7 +44,7 @@ class Polynomial:
         return temp
     dy_dx.__doc__ = 'A method to return the derivative of itself'
 
-    def eval(self, val: float64 | int64) -> float64 | int64:
+    def eval(self, val: float64 | int64) -> float64:
         temp = 0.0
         for i in self.list:
             temp += i.eval(val)

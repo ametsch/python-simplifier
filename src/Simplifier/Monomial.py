@@ -13,19 +13,19 @@ class Monomial:
     def __str__(self) -> str:
         return f"({self.coeff})X^({self.exp})"
     
-    def getCoeff(self) -> float64 | int64:
+    def getCoeff(self) -> float64:
         return self.coeff
 
     def getExp(self) -> int64:
         return self.exp
 
-    def setCoeff(self, coeff: float64 | int64):
+    def setCoeff(self, coeff: float64):
         self.coeff = coeff
 
     def setExp(self, exp: int64) -> None:
         self.exp = exp
 
-    def eval(self, val: float64 | int64) -> float64 | int64:
+    def eval(self, val: float64 | int64) -> float64:
         return self.coeff * pow(val, self.exp)
     eval.__doc__ = "a method which evaluates the monomial where X=val"
 

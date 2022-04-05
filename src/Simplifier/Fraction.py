@@ -27,10 +27,10 @@ class Fraction:
         else:
             self.den = den
     
-    def getNum(self) -> float64 | int64:
+    def getNum(self) -> float64:
         return self.num
 
-    def getDen(self) -> float64 | int64:
+    def getDen(self) -> float64:
         return self.den
     
     def eval(self) -> float64:
