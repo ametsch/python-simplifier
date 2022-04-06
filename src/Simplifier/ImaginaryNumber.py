@@ -31,3 +31,8 @@ class ImaginaryNumber:
             return f"{self.a}-{self.b * -1.0}i"
         else:
             return ""
+
+    def add(self, val: ImaginaryNumber) -> ImaginaryNumber:
+        a = self.getA() + val.getA()
+        b = self.getB() + val.getB()
+        return ImaginaryNumber(a, b)
