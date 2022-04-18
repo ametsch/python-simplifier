@@ -1,5 +1,4 @@
 from decimal import DivisionByZero
-from numpy import float64, int64
 
 class Fraction:
 
@@ -8,36 +7,36 @@ class Fraction:
     '''
 
     def __init__(self):
-        self.den = float64(1.0)
-        self.num = float64(0.0)
+        self.den = float(1.0)
+        self.num = float(0.0)
 
-    def __init__(self, num: float64 | int64, den: float64 | int64):
+    def __init__(self, num: float | int, den: float | int):
         if den == 0.0:
             raise DivisionByZero()
         else:
             self.den = den
             self.num = num
     
-    def setNum(self, num: float64 | int64) -> None:
+    def setNum(self, num: float | int) -> None:
         self.num = num
 
-    def setDen(self, den: float64 | int64) -> None:
+    def setDen(self, den: float | int) -> None:
         if den == 0.0:
             raise DivisionByZero()
         else:
             self.den = den
     
-    def getNum(self) -> float64:
+    def getNum(self) -> float:
         return self.num
 
-    def getDen(self) -> float64:
+    def getDen(self) -> float:
         return self.den
     
-    def eval(self) -> float64:
+    def eval(self) -> float:
         if self.den == 0.0:
             raise DivisionByZero()
         else:
-            return float64(self.num/self.den)
+            return float(self.num/self.den)
     eval.__doc__ = 'a function to evaluate the fraction and return a float value'
 
     def __str__(self) -> str:

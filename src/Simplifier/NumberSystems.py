@@ -1,7 +1,6 @@
 from typing import Any
 import base65536
 import base64
-from numpy import float64, int64
 import pyconverter as pc
 
 __doc__ = """
@@ -24,19 +23,19 @@ def fromBase64(val: str | bytes) -> str:
     return base64.b64decode(val)
 fromBase64.__doc__ = 'Decodes val from base64 to a string'
 
-def decToHex(val: float64 | int64) -> str:
+def decToHex(val: float | int) -> str:
     return pc.doubletohex(val)
 decToHex.__doc__ = 'Encodes a float or int into hexadecimal'
 
-def hexToDec(val: str) -> float64:
+def hexToDec(val: str) -> float:
     return pc.hextodouble(val)
 hexToDec.__doc__ = 'Decodes a hexadecimal encoded value into a float'
 
-def decToBin(val: float64 | int64) -> str:
+def decToBin(val: float | int) -> str:
     return pc.doubletobin(val)
 decToBin.__doc__ = 'Encodes a float or int into binary'
 
-def binToDec(val: str | bytes) -> float64:
+def binToDec(val: str | bytes) -> float:
     return pc.bintodouble(val)
 binToDec.__doc__ = 'Decodes binary to a float'
 
@@ -44,7 +43,7 @@ def hexToOct(val: str) -> str:
     return pc.hextooct(val)
 hexToOct.__doc__ = 'Encodes a hexadecimal string into an octal string'
 
-def decToOct(val: float64 | int64) -> str:
+def decToOct(val: float | int) -> str:
     return pc.doubletooct(val)
 decToOct.__doc__ = 'Encodes a float or int into an octal string'
 

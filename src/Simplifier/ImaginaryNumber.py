@@ -1,4 +1,5 @@
-from numpy import float64, int64
+import Simplifier
+
 
 class ImaginaryNumber:
     __doc__ = """
@@ -8,20 +9,20 @@ class ImaginaryNumber:
         self.a = 0.0
         self.b = 0.0
         
-    def __init__(self, a: float64 | int64, b: float64 | int64):
+    def __init__(self, a: float | int, b: float | int):
         self.a = a
         self.b = b
 
-    def setA(self, a: int64 | float64) -> None:
+    def setA(self, a: int | float) -> None:
         self.a = a
 
-    def setB(self, b: int64 | float64) -> None:
+    def setB(self, b: int | float) -> None:
         self.b = b
         
-    def getA(self) -> float64:
+    def getA(self) -> float:
         return self.a
 
-    def getB(self) -> float64:
+    def getB(self) -> float:
         return self.b
 
     def __str__(self) -> str:
@@ -32,7 +33,7 @@ class ImaginaryNumber:
         else:
             return ""
 
-    def add(self, val: ImaginaryNumber) -> ImaginaryNumber:
+    def add(self, val: Simplifier.ImaginaryNumber) -> Simplifier.ImaginaryNumber:
         a = self.getA() + val.getA()
         b = self.getB() + val.getB()
         return ImaginaryNumber(a, b)

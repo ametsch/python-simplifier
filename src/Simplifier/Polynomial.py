@@ -1,4 +1,3 @@
-from numpy import float64, int64
 import Simplifier
 from Simplifier.Monomial import Monomial
 
@@ -44,7 +43,7 @@ class Polynomial:
         return temp
     dy_dx.__doc__ = 'A method to return the derivative of itself'
 
-    def eval(self, val: float64 | int64) -> float64:
+    def eval(self, val: float | int) -> float:
         temp = 0.0
         for i in self.list:
             temp += i.eval(val)
