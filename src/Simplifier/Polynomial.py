@@ -48,4 +48,4 @@ class Polynomial:
         for i in self.list:
             temp += i.eval(val)
         return temp
-    eval.__doc__ = 'A method to the value of the polynomial at X=val'
+    eval.__doc__ = 'A method to evaluate the value of the polynomial at X=val'

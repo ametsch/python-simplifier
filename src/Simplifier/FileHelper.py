@@ -1,5 +1,5 @@
 __doc__ = '''
-    A class of functions to assist in reading from files
+    A group of functions to assist in reading from files
 '''
 
 def readFile(path: str) -> str:

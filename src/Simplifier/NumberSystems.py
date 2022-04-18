@@ -1,21 +1,20 @@
-from typing import Any
 import base65536
 import base64
 import pyconverter as pc
 
 __doc__ = """
-    A class of functions to encode and decode between diferent number systems
+    A group of functions to encode and decode between diferent number systems
 """
 
-def toBase65536(val: Any) -> str:
+def toBase65536(val) -> str:
     return base65536.encode(val)
 toBase65536.__doc__ = "Encode val into base65536"
 
-def fromBase65536(val: Any) -> str:
+def fromBase65536(val) -> str:
     return base65536.decode(val)
 fromBase65536.__doc__ = 'Decode val from base65536 to a string'
 
-def toBase64(val: Any) -> str:
+def toBase64(val) -> str:
     return base64.b64encode(val)
 toBase64.__doc__ = 'Encode val into base64'
 

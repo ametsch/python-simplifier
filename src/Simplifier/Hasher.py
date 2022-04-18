@@ -1,6 +1,6 @@
 import hashlib as hl
 __doc__ = '''
-    A class of functions to easily run a value through a variety of hash functions
+    A group of functions to easily run a value through a variety of hash functions
 '''
 
 def hash_md5(e) -> str:
