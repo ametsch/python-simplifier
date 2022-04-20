@@ -1,5 +1,7 @@
+import glob as gl
+
 __doc__ = """
-this class contains some mathematical constants and some functions to ease python programming/scripting
+this contains some mathematical constants and some functions to ease python programming
 """
 
 pi = float(3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273724587006)
@@ -54,3 +56,6 @@ def isOdd(val: int) -> bool:
         return False
 isOdd.__doc__ = "return if val is odd"
 
+def glob(patern: str) -> list:
+    return gl.glob(patern)
+glob.__doc__ = 'return a list of all file paths which match the given glob pattern'

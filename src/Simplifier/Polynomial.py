@@ -1,5 +1,6 @@
 import Simplifier
 from Simplifier.Monomial import Monomial
+from Simplifier.Polynomial import Polynomial
 
 class Polynomial:
 
@@ -36,7 +37,7 @@ class Polynomial:
         
         return out
     
-    def dy_dx(self) -> Simplifier.Polynomial:
+    def dy_dx(self) -> Polynomial:
         temp = Polynomial()
         for i in self.list:
             temp.add(i.dy_dx())

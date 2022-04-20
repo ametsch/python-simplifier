@@ -1,3 +1,5 @@
+import glob
+
 __doc__ = '''
     A group of functions to assist in reading from files
 '''
@@ -25,3 +27,16 @@ def readcsv(path: str) -> list:
         out.append(i.split(','))
     return out
 readcsv.__doc__ = 'A function to read a csv file into a list of lists'
+
+def appendFiles(outPath: str, globPatern: str) -> None:
+    with open(outPath, 'w') as f:
+        pass
+    li = glob.glob(globPatern)
+
+    for path in li:
+        data = []
+        with open(path, 'r') as f:
+            data = f.readlines()
+        with open(outPath, 'a') as f:
+            f.writelines(data)
+appendFiles.__doc__ = 'A function to combine all files which match the given glob pattern and write it to the given output path'

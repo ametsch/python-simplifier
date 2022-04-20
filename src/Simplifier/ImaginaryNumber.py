@@ -1,4 +1,5 @@
-import Simplifier
+import imp
+from Simplifier.ImaginaryNumber import ImaginaryNumber
 
 
 class ImaginaryNumber:
@@ -33,7 +34,7 @@ class ImaginaryNumber:
         else:
             return ""
 
-    def add(self, val: Simplifier.ImaginaryNumber) -> Simplifier.ImaginaryNumber:
+    def add(self, val: ImaginaryNumber) -> ImaginaryNumber:
         a = self.getA() + val.getA()
         b = self.getB() + val.getB()
         return ImaginaryNumber(a, b)
