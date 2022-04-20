@@ -6,3 +6,5 @@ build.py
 /__pycache__
 /src/python_simplifier.egg-info/
 /old_versions/
+Untitled.ipynb
+/.ipynb_checkpoints

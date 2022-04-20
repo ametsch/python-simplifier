@@ -40,3 +40,7 @@ def appendFiles(outPath: str, globPatern: str) -> None:
         with open(outPath, 'a') as f:
             f.writelines(data)
 appendFiles.__doc__ = 'A function to combine all files which match the given glob pattern and write it to the given output path'
+
+def strToFile(path: str, contents: str) -> None:
+    with open(path, 'w') as f:
+        f.write(contents)
