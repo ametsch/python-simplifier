@@ -7,7 +7,7 @@ class Monomial:
         
     def __init__(self):
         self.coeff = 0.0
-        self.exp = 0.0
+        self.exp = 0
     
     def __str__(self) -> str:
         return f"({self.coeff})X^({self.exp})"
@@ -18,7 +18,7 @@ class Monomial:
     def getExp(self) -> int:
         return self.exp
 
-    def setCoeff(self, coeff: float):
+    def setCoeff(self, coeff: float) -> None:
         self.coeff = coeff
 
     def setExp(self, exp: int) -> None:

@@ -1,5 +1,7 @@
 import glob as gl
 
+from numpy import deprecate
+
 __doc__ = """
 this contains some mathematical constants and some functions to ease python programming
 """
@@ -21,6 +23,9 @@ e = float(2.71828182845904523536028747135266249775724709369995957496696762772407
 
 oneThird = float(float(1.0)/float(3.0))
 #oneThird.__doc__ = "the constant of one third"
+
+powersOf2 = (1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576)
+#powersOf2.__doc__ = 'a list of powers of 2'
 
 def p(val) -> None:
     print(val)
@@ -59,3 +64,7 @@ isOdd.__doc__ = "return if val is odd"
 def glob(patern: str) -> list:
     return gl.glob(patern)
 glob.__doc__ = 'return a list of all file paths which match the given glob pattern'
+
+def powerOf2(n: int) -> int:
+    return pow(2, n)
+powerOf2.__doc__ = 'returns the value of 2^n'

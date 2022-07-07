@@ -49,3 +49,9 @@ decToOct.__doc__ = 'Encodes a float or int into an octal string'
 def binToOct(val: str | bytes) -> str:
     return pc.bintooct(val)
 binToOct.__doc__ = 'Encodes a binary string into an octal string'
+
+def toBase85(val) -> bytes:
+    return base64.b85encode(val)
+
+def fromBase85(val) -> bytes:
+    return base64.b85decode(val)

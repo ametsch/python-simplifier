@@ -66,3 +66,4 @@ def sha3_512(inPath: str) -> None:
     contents = fh.readFile(inPath)
     hash = h.sha3_512(contents)
     fh.strToFile(f'{inPath}.sha3_512.txt', hash)
+nice = True

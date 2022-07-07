@@ -1,4 +1,3 @@
-import imp
 from Simplifier.ImaginaryNumber import ImaginaryNumber
 
 
@@ -32,7 +31,7 @@ class ImaginaryNumber:
         elif self.b < 0.0:
             return f"{self.a}-{self.b * -1.0}i"
         else:
-            return ""
+            return f"{self.a}"
 
     def add(self, val: ImaginaryNumber) -> ImaginaryNumber:
         a = self.getA() + val.getA()

@@ -11,7 +11,7 @@ def readFile(path: str) -> str:
     return temp
 readFile.__doc__ = 'A function to read an entire file into a string'
 
-def readListFile(path: str, sep: str) -> list:
+def readListFile(path: str, sep="\n") -> list:
     temp = None
     with open(path, "r") as f:
         temp = f.read().split(sep)

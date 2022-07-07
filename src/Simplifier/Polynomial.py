@@ -1,4 +1,3 @@
-import Simplifier
 from Simplifier.Monomial import Monomial
 from Simplifier.Polynomial import Polynomial
 
@@ -8,12 +7,10 @@ class Polynomial:
         A class for a polynomial
     '''
 
-    m = Monomial()
     def __init__(self, *args: Monomial):
         temp = []
         for i in args:
-            if type(i) == type(self.m):
-                temp.append(i)
+            temp.append(i)
         self.list = temp
 
     def __init__(self):
