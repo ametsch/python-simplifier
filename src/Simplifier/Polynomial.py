@@ -23,12 +23,12 @@ class Polynomial:
         self.list.remove(monomial)
     
     def __str__(self) -> str:
-        out = ""
+        out = ''
         for i in self.list:
             if i.getCoeff() < 0:
-                out = out + f" - {i.getCoeff() * -1}X^{i.getExp()}"
+                out = out + f' - {i.getCoeff() * -1}X^{i.getExp()}'
             elif i.getCoeff() > 0:
-                out = out + f" + {i.getCoeff()}X^{i.getExp()}"
+                out = out + f' + {i.getCoeff()}X^{i.getExp()}'
             else:
                 pass
         

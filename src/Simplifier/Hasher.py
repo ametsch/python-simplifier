@@ -3,47 +3,47 @@ __doc__ = '''
     A group of functions to easily run a value through a variety of hash functions
 '''
 
-def md5(e) -> str:
-    return hl.md5(str(e).encode()).hexdigest()
+def md5(e, encoding='UTF-8') -> str:
+    return hl.md5(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha1(e) -> str:
-    return hl.sha1(str(e).encode()).hexdigest()
+def sha1(e, encoding='UTF-8') -> str:
+    return hl.sha1(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha256(e) -> str:
-    return hl.sha256(str(e).encode()).hexdigest()
+def sha256(e, encoding='UTF-8') -> str:
+    return hl.sha256(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha512(e) -> str:
-    return hl.sha512(str(e).encode()).hexdigest()
+def sha512(e, encoding='UTF-8') -> str:
+    return hl.sha512(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha224(e) -> str:
-    return hl.sha224(str(e).encode()).hexdigest()
+def sha224(e, encoding='UTF-8') -> str:
+    return hl.sha224(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha384(e) -> str:
-    return hl.sha384(str(e).encode()).hexdigest()
+def sha384(e, encoding='UTF-8') -> str:
+    return hl.sha384(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha3_512(e) -> str:
-    return hl.sha3_512(str(e).encode()).hexdigest()
+def sha3_512(e, encoding='UTF-8') -> str:
+    return hl.sha3_512(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha3_256(e) -> str:
-    return hl.sha3_256(str(e).encode()).hexdigest()
+def sha3_256(e, encoding='UTF-8') -> str:
+    return hl.sha3_256(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha3_224(e) -> str:
-    return hl.sha3_224(str(e).encode()).hexdigest()
+def sha3_224(e, encoding='UTF-8') -> str:
+    return hl.sha3_224(str(e).encode(encoding=encoding)).hexdigest()
 
-def sha3_384(e) -> str:
-    return hl.sha3_384(str(e).encode()).hexdigest()
+def sha3_384(e, encoding='UTF-8') -> str:
+    return hl.sha3_384(str(e).encode(encoding=encoding)).hexdigest()
 
-def shake128(e) -> str:
-    return hl.shake_128(str(e).encode()).hexdigest()
+def shake128(e, encoding='UTF-8') -> str:
+    return hl.shake_128(str(e).encode(encoding=encoding)).hexdigest()
 
-def shake256(e) -> str:
-    return hl.shake_256(str(e).encode()).hexdigest()
+def shake256(e, encoding='UTF-8') -> str:
+    return hl.shake_256(str(e).encode(encoding=encoding)).hexdigest()
 
-def blake2b(e) -> str:
-    return hl.blake2b(str(e).encode()).hexdigest()
+def blake2b(e, encoding='UTF-8') -> str:
+    return hl.blake2b(str(e).encode(encoding=encoding)).hexdigest()
 
-def blake2s(e) -> str:
-    return hl.blake2s(str(e).encode()).hexdigest()
+def blake2s(e, encoding='UTF-8') -> str:
+    return hl.blake2s(str(e).encode(encoding=encoding)).hexdigest()
 
 def multi_blake2b(e, i: int) -> str:
     if i <= 1:

@@ -13,7 +13,6 @@ class Fraction:
     def __init__(self, num: float | int, den: float | int):
         if den == 0.0:
             raise DivisionByZero(den)
-            pass
         else:
             self.den = den
             self.num = num
@@ -24,7 +23,6 @@ class Fraction:
     def setDen(self, den: float | int) -> None:
         if den == 0.0:
             raise DivisionByZero(den)
-            pass
         else:
             self.den = den
     
@@ -40,7 +38,7 @@ class Fraction:
             pass
         else:
             return float(self.num/self.den)
-    eval.__doc__ = 'a function to evaluate the fraction and return a float value'
+    eval.__doc__ = 'Evaluates the fraction and returns a float value'
 
     def __str__(self) -> str:
-        return f"{self.num} / {self.den}"
+        return f'{self.num} / {self.den}'

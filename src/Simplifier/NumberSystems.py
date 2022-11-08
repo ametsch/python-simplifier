@@ -2,13 +2,13 @@ import base65536
 import base64
 import pyconverter as pc
 
-__doc__ = """
+__doc__ = '''
     A group of functions to encode and decode between diferent number systems
-"""
+'''
 
 def toBase65536(val) -> str:
     return base65536.encode(val)
-toBase65536.__doc__ = "Encode val into base65536"
+toBase65536.__doc__ = 'Encode val into base65536'
 
 def fromBase65536(val) -> str:
     return base65536.decode(val)

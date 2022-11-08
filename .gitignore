@@ -8,3 +8,5 @@ build.py
 /old_versions/
 Untitled.ipynb
 /.ipynb_checkpoints
+build.cmd
+upload.cmd

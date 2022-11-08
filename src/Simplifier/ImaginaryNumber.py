@@ -2,9 +2,9 @@ from Simplifier.ImaginaryNumber import ImaginaryNumber
 
 
 class ImaginaryNumber:
-    __doc__ = """
+    __doc__ = '''
         a class to store the value of a complex number in the form a+bi
-    """
+    '''
     def __init__(self):
         self.a = 0.0
         self.b = 0.0
@@ -27,11 +27,11 @@ class ImaginaryNumber:
 
     def __str__(self) -> str:
         if self.b > 0.0:
-            return f"{self.a}+{self.b}i"
+            return f'{self.a}+{self.b}i'
         elif self.b < 0.0:
-            return f"{self.a}-{self.b * -1.0}i"
+            return f'{self.a}-{self.b * -1.0}i'
         else:
-            return f"{self.a}"
+            return f'{self.a}'
 
     def add(self, val: ImaginaryNumber) -> ImaginaryNumber:
         a = self.getA() + val.getA()

@@ -10,7 +10,7 @@ class Monomial:
         self.exp = 0
     
     def __str__(self) -> str:
-        return f"({self.coeff})X^({self.exp})"
+        return f'({self.coeff})X^({self.exp})'
     
     def getCoeff(self) -> float:
         return self.coeff
@@ -26,8 +26,8 @@ class Monomial:
 
     def eval(self, val: float | int) -> float:
         return self.coeff * pow(val, self.exp)
-    eval.__doc__ = "a method which evaluates the monomial where X=val"
+    eval.__doc__ = 'a method which evaluates the monomial where X=val'
 
     def dy_dx(self) -> Simplifier.Monomial:
         return Monomial(self.coeff*self.exp, self.exp-1)
-    dy_dx.__doc__ = "return a Monomial that is the first derivative of itself"
+    dy_dx.__doc__ = 'return a Monomial that is the first derivative of the Monomial which this is called on'
